@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Poppins', 'Open Sans', Arial, sans-serif;
+}
+
+header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+h1 {
+  font-size: 5.4rem;
+  font-weight:700;
+  text-align: center;
+  color: #fff;
+}
+
+.create-note {
+  display: flex;
+}
+
+input {
+  margin: 20px 15px 120px 0;
+  height: 56px;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+}
+
+input[type=text] {
+  padding: 1.4rem;
+  width: 450px;
+  font-size: 1.8rem;
+  background-color: rgb(38, 37, 48);
+  border: 1px solid rgb(50, 49, 59);
+}
+
+input[type=button] {
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: 120px;
+  background-color: rgb(44 99 219);
+  border: 1px solid rgb(65, 113, 216);
+}
+
+input[type=button]:hover {
+  background-color: rgb(44 99 219 / 85%);
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.note {
+  padding: 1.75rem;
+  background-color: rgb(38, 37, 48);
+  border-radius: 2px;
+  border-left: 3.5px solid rgb(44 99 219);
+  min-height: 100px;
+  width: 350px;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: rgb(174, 174, 174);
+}
+
+.note.completed {
+  border-left: 3.5px solid rgb(0 168 107);
+}
+
+.note p {
+  color: #fff;
+}
+
+.note span {
+  font-size: 1.4rem;
+}
+
+.note-footer {
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+}
+
+.icons {
+  gap: 12px;
+  cursor: pointer;
+}
+
+.complete-icon:hover {
+  color: rgb(41, 163, 118);
+}
+
+.edit-icon:hover {
+  color: rgb(255, 234, 1);
+}
+
+.delete-icon:hover {
+  color: rgb(210, 89, 89);
+}
